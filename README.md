@@ -35,26 +35,27 @@ using a combination of C++ classes and blueprints:
     once a cube is placed on it. This is added visual feedback to the
     player to improve playability.
 
-+-----------------------------------------+----------------------------+
-| ![](media/image1.png){width="1.5630107174103236in" height="2.0081430446194224in"}| ![](media/image2.png){width="1.6905293088363955in" height="2.04258530183727in"}|
-| Before slotting cube | After slotting cube |
-| | |
-+-----------------------------------------+----------------------------+
+Before slotting cube
+
+![](media/image1.png)
+
+After slotting cube
+
+![](media/image2.png)|
+
 
 -   **Keypad**: Another mechanism to open a door. The keypad contains a
     preview screen, 10 numeric keys, one back button and one enter key.
     The keypad was modelled in Blender. The keypad is made using the
     Actor-component system in Unreal Engine.
 
-+---------------------------------------+------------------------------+
-| ![](media/im                          | ![](media/image4.png){       |
-| age3.png){width="1.398546587926509in" | width="1.3284831583552057in" |
-| height="2.21174321959755in"}          | he                           |
-|                                       | ight="2.2312970253718287in"} |
-| Initial keypad appearance             |                              |
-|                                       | Keypad once the correct code |
-|                                       | is entered                   |
-+---------------------------------------+------------------------------+
+Initial keypad appearance
+
+![](media/image3.png)
+
+Keypad once the correct code is entered
+
+![](media/image4.png)
 
 -   **Cube puzzle**: The cube puzzle's cube has been created as an
     Examinable Actor. The cube has been created using Blender with
@@ -65,17 +66,14 @@ using a combination of C++ classes and blueprints:
     and the wall behind the cube contains the symbols needed to solve
     the puzzle.
 
-+-----------------------------------------------------------------------+
-| ![](media/image5.png){width="3.152007874015748in"                     |
-| height="2.012218941382327in"}                                         |
-|                                                                       |
-| **Cube puzzle before interaction**                                    |
-+-----------------------------------------------------------------------+
-| ![](media/image6.png){width="3.0976038932633423in"                    |
-| height="2.100258092738408in"}                                         |
-|                                                                       |
-| **Cube puzzle after interaction**                                     |
-+-----------------------------------------------------------------------+
+**Cube puzzle before interaction**
+
+![](media/image5.png) 
+
+**Cube puzzle after interaction**   
+
+![](media/image6.png) 
+
 
 > This is done to increase playability and reduce unwanted complexity in
 > the puzzle. The texture for the cube and the sequence of characters
@@ -102,13 +100,14 @@ using a combination of C++ classes and blueprints:
 > a static mesh component to display each of the tiles will not work as
 > they are not actors and cannot be added to the inventory.
 
-  -----------------------------------------------------------------------
-  ![](media/image7.png){width="2.972587489063867in"
-  height="2.9589632545931757in"}
-
-  -----------------------------------------------------------------------
-
 **Slide puzzle**
+
+  -----------------------------------------------------------------------
+  ![](media/image7.png)
+
+  -----------------------------------------------------------------------
+
+
 
 > Unreal has a child actor component which can hold actors, but it does
 > this by creating the default object of the class. This causes a need
@@ -131,25 +130,23 @@ using a combination of C++ classes and blueprints:
     only one slide moving in one direction at any given time. So just
     regular movement actions would be enough.
 
-+------------------------------------------+---------------------------+
-| ![](media/                               | ![](media/image9.png){wid |
-| image8.png){width="1.5346522309711286in" | th="1.5393088363954506in" |
-| height="1.5333727034120734in"}           | heig                      |
-|                                          | ht="1.532253937007874in"} |
-| \(a\)                                    |                           |
-|                                          | \(b\)                     |
-+------------------------------------------+---------------------------+
-| ![](media/i                              | !                         |
-| mage10.png){width="1.5428444881889765in" | [](media/image11.png){wid |
-| height="1.5373807961504813in"}           | th="1.5352066929133859in" |
-|                                          | heigh                     |
-| \(c\)                                    | t="1.5476793525809274in"} |
-|                                          |                           |
-|                                          | \(d\)                     |
-+------------------------------------------+---------------------------+
+**Slide Puzzle operations:** 
 
-**Slide Puzzle operations: (a)Selecting slide, (b)Movement of slide, (c)
-Pick up slide, (d) Put down slide**
+(a)Selecting slide
+
+![](media/image8.png) 
+
+(b)Movement of slide
+
+![](media/image9.png)
+
+(c)Pick up slide
+
+![](media/image10.png)
+
+(d) Put down slide
+
+![](media/image11.png)
 
 > In this slide puzzle, the player needs to be able to pick up a slide
 > to add it to the inventory. This means that there is a specific need
