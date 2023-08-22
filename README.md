@@ -36,12 +36,9 @@ using a combination of C++ classes and blueprints:
     player to improve playability.
 
 +-----------------------------------------+----------------------------+
-| ![](media/i                             | ![](media/image2.png){wi   |
-| mage1.png){width="1.5630107174103236in" | dth="1.6905293088363955in" |
-| height="2.0081430446194224in"}          | he                         |
-|                                         | ight="2.04258530183727in"} |
-| Before slotting cube                    |                            |
-|                                         | After slotting cube        |
+| ![](media/image1.png){width="1.5630107174103236in" height="2.0081430446194224in"}| ![](media/image2.png){width="1.6905293088363955in" height="2.04258530183727in"}|
+| Before slotting cube | After slotting cube |
+| | |
 +-----------------------------------------+----------------------------+
 
 -   **Keypad**: Another mechanism to open a door. The keypad contains a
