@@ -1,4 +1,4 @@
-# Unreal_Testing
+# Untitled_Puzzle_Game
 
 This project was done as part of the MSc. Games engineering
 dissertation. The topic of the dissertation is Creating Awareness of
