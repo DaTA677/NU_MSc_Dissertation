@@ -10,8 +10,8 @@ base. The game is a 3D First-person puzzle game.
 
 **Mechanics:**
 
-Interaction system: The main mechanic in this game is an interaction
-system that allows the user to interact with different objects in the
+Interaction system: The main mechanic in this game is an [interaction
+system](./Source/PuzzleGame/InteractableActors.h)! that allows the user to interact with different objects in the
 game world.
 
 Each object when interacted will perform one of three actions:
@@ -26,7 +26,7 @@ Each object when interacted will perform one of three actions:
 Based on the interaction mechanics, the following objects were created
 using a combination of C++ classes and blueprints:
 
--   **Slot and Cube**: Basic slot and cube which acts as a keyhole-key
+-   **Slot and Cube**: Basic [slot](./Source/PuzzleGame/SocketableActors.h)! and [cube](./Source/PuzzleGame/PickableActor.h)! which acts as a keyhole-key
     interaction. Cubes are keys that the players can interact with and
     add to their inventory while slots are keyholes which can hold one
     Cube. The slot has a black box present at its location in order to
@@ -41,10 +41,10 @@ Before slotting cube
 
 After slotting cube
 
-![](media/image2.png)|
+![](media/image2.png)
 
 
--   **Keypad**: Another mechanism to open a door. The keypad contains a
+-   **Keypad**: Another mechanism to open a door. The [keypad](./Source/PuzzleGame/KeypadActor.h)! contains a
     preview screen, 10 numeric keys, one back button and one enter key.
     The keypad was modelled in Blender. The keypad is made using the
     Actor-component system in Unreal Engine.
@@ -58,7 +58,7 @@ Keypad once the correct code is entered
 ![](media/image4.png)
 
 -   **Cube puzzle**: The cube puzzle's cube has been created as an
-    Examinable Actor. The cube has been created using Blender with
+    [Examinable Actor](./Source/PuzzleGame/ExaminableActors.cpp)!. The cube has been created using Blender with
     specific UVs in order to allow cube puzzle texture to be applied to
     it. The cube when interacted can be moved about by the user to look
     at the various faces. The cube puzzle is placed in the room such
@@ -81,9 +81,9 @@ Keypad once the correct code is entered
 > order to reduce confusion. A roll feature to rotate the cube on its
 > side was implemented to improve the user experience.
 
--   **Slide puzzle**: The slide puzzle was created keeping in mind the
+-   **Slide puzzle**: The [slide puzzle](./Source/PuzzleGame/InteractableSlidePuzzleActor.h)! was created keeping in mind the
     bias associated with it- functional fixedness. The slide puzzle is
-    made up of 16 meshes, 1 slide frame and 15 slide tiles, each tile
+    made up of 16 meshes, 1 slide frame and 15 [slide tiles](./Source/PuzzleGame/PickableSlideActor.h)!, each tile
     with its UVs updated to load the correct part of the image onto its
     top face. To implement the bias, the slide puzzle tiles should be
     added to the inventory of the character. This posed two challenges
